@@ -27,5 +27,9 @@ async def on_member_remove(member):
     """ Bot detects someone has left a server it is in """
     print(f"{member} has left a server.")
 
+@client.command()
+async def copy(ctx, *args):
+    await ctx.send(f"{' '.join(args)}")
+
 
 client.run(os.getenv("TOKEN"))
