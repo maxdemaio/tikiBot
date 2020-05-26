@@ -3,3 +3,9 @@
 ### A bot made for Discord with various games and features.
 
 <img src="/static/tiki.jpg" width = 250 align="left">
+
+## Commands
+### ```$ping```
+
+* **Description:** Returns ```Pong!```
+* **Usage:** ```$ping```
