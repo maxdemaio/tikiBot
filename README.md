@@ -2,12 +2,12 @@
 
 ### A bot made for Discord with various games and features.
 
-<img src="./static/tiki.jpg" width=250 align="left">
+<img src="./static/tiki.jpg" width=250>
 
 ## Description
 This bot utilizes the [Discord library](https://github.com/Rapptz/discord.py) to interact with Discord, a group-chatting platform. For more information on the library, please visit the [documentation](https://discordpy.readthedocs.io/en/latest/index.html). 
 
-### Usage
+## Usage
 To use this bot on your server, feel free to fork this repository and visit Discord's [developer portal](https://discord.com/developers/applications) to create your own application and unique token. A very nice setup example can be found at [this YouTube video](https://www.youtube.com/watch?v=nW8c7vT6Hl4) (If still available).
 
 --- 
@@ -16,20 +16,20 @@ To use this bot on your server, feel free to fork this repository and visit Disc
 
 ### ```$info```
 
-* **Description:** Returns a link to this GitHub repository
+* **Description:** Returns a link to this GitHub repository.
 * **Usage:** ```$info```
 
 ### ```$copy```
 
-* **Description:** Returns a copy of the argument(s) after the command
+* **Description:** Returns a copy of the argument(s) after the command.
 * **Usage:** ```$copy Example message```
 
 ### ```$ping```
 
-* **Description:** Returns ```Pong!``` and the client latency in milliseconds
+* **Description:** Returns ```Pong!``` and the client latency in milliseconds.
 * **Usage:** ```$ping```
 
 ### ```$8ball```
 
-* **Description:** Returns an 8ball response to a question.
+* **Description:** Returns an Eight-ball response to a question.
 * **Usage:** ```$8ball Question```
