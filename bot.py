@@ -68,5 +68,34 @@ async def _8ball(ctx, *question):
     question = ' '.join(question)
     await ctx.send(f"Question: {question}\nAnswer: {random.choice(responses)}")
 
+# Weekly Sailors Commands
+@client.command(aliases=["monday", "tuesday", "wednesday", "friday", "sunday"])
+async def day(ctx):
+    """ Return a 'Rise and Shine, Sailors' video """
+    aliasUsed = ctx.invoked_with
+    
+    if aliasUsed == "monday":
+        emoji = "😔"
+        file = discord.File("./it_be/monday.mp4", filename="monday.mp4")
+        await ctx.send(f"It be Monday, sailors {emoji}", file=file)
+    elif aliasUsed == "tuesday":
+        emoji = "🌮"
+        file = discord.File("./it_be/tuesday.mp4", filename="tuesday.mp4")
+        await ctx.send(f"It be Taco Tuesday, sailors {emoji}", file=file)
+    elif aliasUsed == "wednesday":
+        emoji = "💪"
+        file = discord.File("./it_be/wednesday.mp4", filename="wednesday.mp4")
+        await ctx.send(f"It be Wednesday, sailors {emoji}", file=file)
+    elif aliasUsed == "friday":
+        emoji = "🐐"
+        file = discord.File("./it_be/friday.mp4", filename="friday.mp4")
+        await ctx.send(f"It be Friday, sailors {emoji}", file=file)
+    elif aliasUsed == "sunday":
+        emoji = "🏌️‍♂️"
+        file = discord.File("./it_be/sunday.mp4", filename="sunday.mp4")
+        await ctx.send(f"It be Sunday, sailors {emoji}", file=file)
+    else:
+        await ctx.send("Specify a day, sailor!")
+
 
 client.run(os.getenv("TOKEN"))
