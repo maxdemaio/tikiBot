@@ -33,3 +33,8 @@ To use this bot on your server, feel free to fork this repository and visit Disc
 
 * **Description:** Returns an Eight-ball response to a question.
 * **Usage:** ```$8ball Question```
+
+### ```$day```
+
+* **Description:** Returns a 'Rise and Shine, Sailors' video for the day of the week specified in the command.
+* **Usage:** ```$friday``` ```$monday``` ```$wednesday``` etc.
