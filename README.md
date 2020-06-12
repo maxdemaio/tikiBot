@@ -36,5 +36,5 @@ To use this bot on your server, feel free to fork this repository and visit Disc
 
 ### ```$day```
 
-* **Description:** Returns a 'Rise and Shine, Sailors' video for the day of the week specified in the command.
+* **Description:** Returns a video for the day of the week specified in the command.
 * **Usage:** ```$friday``` ```$monday``` ```$wednesday``` etc.
