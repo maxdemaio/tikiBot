@@ -123,4 +123,4 @@ async def time(ctx):
         await ctx.send("Specify a time, sailer!")
 
 
-client.run(os.environ.get("TOKEN"))
+client.run(os.environ['TOKEN'])
