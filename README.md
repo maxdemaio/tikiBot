@@ -2,7 +2,7 @@
 
 ### A bot made for Discord with various games and features.
 
-<img src="./static/tiki.jpg" width=250>
+<img src="./staticfiles/tiki.jpg" width=250>
 
 ## Description
 This bot utilizes the [Discord library](https://github.com/Rapptz/discord.py) to interact with Discord, a group-chatting platform. For more information on the library, please visit the [documentation](https://discordpy.readthedocs.io/en/latest/index.html). 
@@ -38,3 +38,8 @@ To use this bot on your server, feel free to fork this repository and visit Disc
 
 * **Description:** Returns a video for the day of the week specified in the command.
 * **Usage:** ```$friday``` ```$monday``` ```$wednesday``` etc.
+
+### ```$time```
+
+* **Description:** Returns a video for the time of the day specified in the command.
+* **Usage:** ```$night```
