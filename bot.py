@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 
 @client.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="Hi Dylando!"))
+    await client.change_presence(activity=discord.Game(name="Hi Dylando!"))
     print("Bot is ready.")
 
 @client.event
