@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO)
 
 # Statuses
 status = ["Type '$info' for commands!", "Hi Dylando!", "It be ya own", "Yo Joel?",
-    "Brawl Minus", "2 stocks don't matter", "2258", "Seeding the bracket"]
+    "Brawl Minus", "3 stocks don't matter", "2258", "Seeding the bracket"]
 
 
 # Looped task to change status
