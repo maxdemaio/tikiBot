@@ -1,9 +1,10 @@
 import logging
 import os
 import random
+from itertools import cycle
 
 import discord
-from discord.ext import commands
+from discord.ext import commands,tasks
 
 import settings
 
@@ -14,10 +15,22 @@ client = commands.Bot(command_prefix = "$")
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
+# Statuses
+status = ['Type "$info" for commands!', 'Hi Dylando!', 'It be ya own']
+
+
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name="Hi Dylando!"))
     print("Bot is ready.")
+
+# Looped task to change status
+@tasks.loop(seconds=30.0)
+async def change_status():
+    await client.wait_until_ready()
+    msgs = cycle(status)
+
+    current_status = next(msgs)
+    await client.change_presence(activity=discord.Game(name=current_status))
 
 @client.event
 async def on_member_join(member):
