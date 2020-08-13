@@ -22,8 +22,8 @@ status = ['Type "$info" for commands!', 'Hi Dylando!', 'It be ya own']
 
 # Looped task to change status
 async def change_status():
+    msgs = cycle(status)
     while True:
-        msgs = cycle(status)
         current_status = next(msgs)
         await client.change_presence(activity=discord.Game(name=current_status))
         await asyncio.sleep(30)
