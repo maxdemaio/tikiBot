@@ -1,3 +1,4 @@
+import asyncio
 import logging
 import os
 import random
@@ -25,7 +26,7 @@ async def change_status():
         msgs = cycle(status)
         current_status = next(msgs)
         await client.change_presence(activity=discord.Game(name=current_status))
-        await asyncio.sleep(20)
+        await asyncio.sleep(30)
 
 @client.event
 async def on_ready():
