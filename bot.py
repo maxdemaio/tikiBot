@@ -18,7 +18,8 @@ logging.basicConfig(level=logging.INFO)
 
 # Statuses
 status = ["Type '$info' for commands!", "Hi Dylando!", "It be ya own", "Yo Joel?",
-    "Brawl Minus", "3 stocks don't matter", "2258", "Seeding the bracket"]
+    "Brawl Minus", "3 stocks don't matter", "2258", "Seeding the bracket", "Bramble Blast",
+    "S͟a̸v̷e̴ m͠e", "Roll in one more time", "Oatmeal is the GOATmeal", "Yeetums Mcbeetums", "Mihoy"]
 
 
 # Looped task to change status
@@ -27,7 +28,7 @@ async def change_status():
     while True:
         current_status = next(msgs)
         await client.change_presence(activity=discord.Game(name=current_status))
-        await asyncio.sleep(30)
+        await asyncio.sleep(45)
 
 @client.event
 async def on_ready():
