@@ -43,3 +43,7 @@ To use this bot on your server, feel free to fork this repository and visit Disc
 
 * **Description:** Returns a video for the time of the day specified in the command.
 * **Usage:** ```$night```
+
+### ```$laugh```
+* **Description:** Returns a Tom & Jerry laughing video.
+* **Usage:** ```$laugh```

@@ -145,9 +145,8 @@ async def time(ctx):
 @client.command()
 async def laugh(ctx):
     """ Return a video """
-    emoji = "😂"
     file = discord.File("./staticfiles/laugh.mov", filename="laugh.mov")
-    await ctx.send(f"You got the whole squad laughin' {emoji}", file=file)
+    await ctx.send(file=file)
     
 
 client.run(os.environ['TOKEN'])
