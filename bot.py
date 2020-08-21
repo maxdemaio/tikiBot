@@ -126,6 +126,7 @@ async def day(ctx):
     else:
         await ctx.send("Specify a day, sailer!")
 
+
 # Time of day sailers
 @client.command(aliases=["night",])
 async def time(ctx):
@@ -139,5 +140,14 @@ async def time(ctx):
     else:
         await ctx.send("Specify a time, sailer!")
 
+
+# Misc commands
+@client.command()
+async def laugh(ctx):
+    """ Return a video """
+    emoji = "😂"
+    file = discord.File("./staticfiles/laugh.mov", filename="laugh.mov")
+    await ctx.send(f"You got the whole squad laughin' {emoji}", file=file)
+    
 
 client.run(os.environ['TOKEN'])
